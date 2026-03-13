@@ -1,0 +1,62 @@
+/FORTRAN FILE             = princi.f
+FORTRAN FILE             = condin.f
+BOUNDARY CONDITIONS FILE = bc_canal_with_9_cyl_new.cli
+GEOMETRY FILE            = bathy_canal_with_9_cyl_new.slf
+RESULTS FILE             = res_cas_complet.slf
+/----------------------------------------------------------------------/
+/                       SIPHONS
+/----------------------------------------------------------------------/
+/NUMBER OF CULVERTS        = 16
+/CULVERT DATA FILE        = siphons_cas1_ad.txt
+/----------------------------------------------------------------------/
+/                       GENERAL OPTION
+/----------------------------------------------------------------------/
+TIME STEP                       = 0.0018
+NUMBER OF TIME STEPS            = 5000
+GRAPHIC PRINTOUT PERIOD         = 50
+LISTING PRINTOUT PERIOD         = 50
+VARIABLES FOR GRAPHIC PRINTOUTS = 'U,V,S,B,Q,F,H'
+MASS-BALANCE                    = YES
+INFORMATION ABOUT SOLVER        = YES
+/----------------------------------------------------------------------/
+/                   PHYSICAL PARAMETERS
+/----------------------------------------------------------------------/
+LAW OF BOTTOM FRICTION = 3
+FRICTION COEFFICIENT   = 85.
+VELOCITY DIFFUSIVITY   = 0.
+/----------------------------------------------------------------------/
+/             INITIAL AND BOUNDARY CONDITIONS
+/----------------------------------------------------------------------/
+/INITIAL CONDITIONS    = 'CONSTANT DEPTH'
+/INITIAL DEPTH         = 0.1
+/entre 0.0027 m3/s et 0.03611 m3/s
+/40 m3/h->0.011
+/80 m3/h->0.022
+/120 m3/h->0.033
+/PRESCRIBED FLOWRATES  = 0.;0.02
+/VELOCITY PROFILES = 0;4
+/ 0.044 is the uniform water depth for q=0.011
+/PRESCRIBED ELEVATIONS = 0.2;0.
+/LIQUID BOUNDARIES FILE    = input.txt
+/----------------------------------------------------------------------/
+/                 NUMERICAL PARAMETERS
+/----------------------------------------------------------------------/
+/SCHEME FOR ADVECTION OF VELOCITIES  = 1
+/SOLVER ACCURACY                     = 1.E-8
+/IMPLICITATION FOR DEPTH             = 0.6
+/IMPLICITATION FOR VELOCITY          = 0.6
+/FREE SURFACE GRADIENT COMPATIBILITY = 0.9
+/TREATMENT OF THE LINEAR SYSTEM      = 2
+/SOLVER                              = 1
+/CONTINUITY CORRECTION               = YES
+/----------------------------------------------------------------------/
+/TIDAL FLATS                         = NO
+/SUPG OPTION                         = 1;2
+/----------------------------------------------------------------------/
+/    NUMERICAL PARAMETERS FOR WATER MASS CONSERVATION
+/----------------------------------------------------------------------/
+/TIDAL FLATS                         = YES
+/TREATMENT OF NEGATIVE DEPTHS        = 2
+/MASS-LUMPING ON H                   = 1
+/CONTINUITY CORRECTION               = YES
+/SUPG OPTION                         = 1;0

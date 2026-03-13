@@ -1,0 +1,19 @@
+#########################################################################
+:FileType xyz  ASCII  EnSim 1.0
+# Canadian Hydraulics Centre/National Research Council (c) 1998-2012
+# DataType                 XYZ Point Set
+#
+:Application              BlueKenue
+:Version                  3.3.4
+:WrittenBy                ARTHUR AMALIR
+:CreationDate             Wed, Mar 19, 2025 05:34 PM
+#
+#------------------------------------------------------------------------
+:Name  CoordCAPTEURS
+#
+:AttributeUnits 1 m
+:EndHeader
+4.48 0.192               0
+5.4 0.192               0
+6.6 0.192               0
+7.86 0.192               0

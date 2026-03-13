@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Large archives and packaged bundles (avoid >100MB push failures)
+*.zip
+*.7z
+*.rar
+
+# Documents and slide/report artifacts (keep source code/data focused)
+*.pdf
+*.docx
+*.pptx
+*.PPTX
+*.xlsx
+
+# Plot/image outputs
+*.png
+*.jpg
+*.jpeg
+
+# MATLAB autosave
+*.asv

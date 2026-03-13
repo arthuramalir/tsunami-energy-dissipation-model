@@ -1,0 +1,20 @@
+CREATION DE MAILLAGE - BLUEKENUE
+1.ouvrir fichier .i2s (chaque cylindre est independent) + canal_true_ (xyz file?)
+2.placer tous les elements dans 2d view
+3. selectionner outil new closed line (faire rectangle)
+
+4. ouvrir T3 Mesh generator (onglet File->New)
+5. On regle la taille des mailles (default edge length), Edge growth ration (A REGARDER SUR INTERNET)
+6. Enventuellement, modifier les ligne des cercles (ajouter des points) pour un maillage de points -> rendre les lignes plus continues (CLIQUE DROIT SUR L'OBJET [CYLINDRE] PUIS RESAMPLE et FAIRE VARIER DELTA)
+7.Creation de maillage: on glisse les lignes quon veut sur les lignes des mailalges (New ClosedLine -> Outline); Cylindres -> HardLines;
+8. Run le T3 Mesh tool
+9. interpolation des profondeurs dans les mailles -> Files -> New )> 2d INterpolator (mettre nauge de points dedans (JE ME SOUVIENS PLUS DU FORMAT et contour)
+10. Tools -> Map Objetct -> new2dinterpolator
+11. Creation de fichier .slf -> file -> new SELAFIN OBJECT -> clique droit, ajouter variable -> rajouter maillage avec valeurs mappee (name BOTTOM)
+12. Si ca fonctionne pas, 2dinterpoler le fichier BOTTOM (verifier properties -> colourscale si ca ne fonctionne pas_
+13. Enregistrer "BOTTOM" et "newSelafin"
+14. Creation du fichier BC --> file -> new -> Boundary conditions file -> BOTTOM -> "BOTTOM_BC"
+
+
+NB: Creation de nuage de point pour simuler les capteurs!! -> fichier xyz ou meme document texte
+NB2: valeurs aux jauges synthetiques -> extract time series au niveau du nuage de points quona  creer
