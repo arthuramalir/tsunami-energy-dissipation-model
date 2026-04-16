@@ -17,13 +17,6 @@ This repository is intentionally kept close to the original project layout (ligh
 - Python analysis/plotting scripts (`.py`)
 - Fortran boundary/initial condition routines (`.f`)
 
-## Quick start
-
-1. Clone the repository.
-2. Open the project in VS Code.
-3. Run Python post-processing scripts from `COURBES/` as needed.
-4. Use TELEMAC/MATLAB files from `CODE/` for simulation and scenario setup.
-
 ## Notes
 
 - Many files are research artifacts and intermediate outputs.
